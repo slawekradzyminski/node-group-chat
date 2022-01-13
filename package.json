@@ -12,5 +12,13 @@
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.8",
+    "@types/react": "^17.0.38",
+    "cypress": "^9.2.1",
+    "cypress-wait-until": "^1.7.2",
+    "mock-socket": "^9.0.8",
+    "typescript": "^4.5.4"
   }
 }
