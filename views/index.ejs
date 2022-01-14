@@ -41,6 +41,11 @@
                 $('#messages').append($('<li>').html(username));
             });
 
+            // append text if someone is online
+            socket.on('is_offline', function(username) {
+                $('#messages').append($('<li>').html(username));
+            });
+
             // ask username
             var username = prompt('Please tell me your name');
             socket.emit('username', username);
