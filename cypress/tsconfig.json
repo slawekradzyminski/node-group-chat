@@ -11,7 +11,8 @@
     "types": [
       "cypress",
       "mock-socket",
-      "node"
+      "node",
+      "cypress-wait-until"
     ]
   },
   "include": [

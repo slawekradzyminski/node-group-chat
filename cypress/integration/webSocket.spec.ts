@@ -1,7 +1,6 @@
 import * as webSocketMock from "../webSocket/webSocketMock";
 import { visitWithWebSocketMock } from "../webSocket/visitWithWebSocketMock";
 import {
-  waitForWebSocketToOpen,
   waitForWebSocketMessage,
 } from "../webSocket/webSocketWaits";
 
@@ -25,7 +24,6 @@ describe("websocket test", () => {
       handle: () => `42["chat_message", "<strong>Pikachu</strong>: Pika!"]`,
     });
 
-    // browser sends a message -> should arrive at server
     cy.get(`#txt`).type("Pika!{enter}");
     waitForWebSocketMessage((msg) => msg.includes("Pika!"));
     cy.get("#messages").should("contain", "Pika!");
