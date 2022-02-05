@@ -4,8 +4,17 @@
     "moduleResolution": "node",
     "strict": true,
     "target": "es6",
-    "lib": ["es6", "dom"],
-    "types": ["cypress", "mock-socket", "node", "cypress-wait-until"]
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "types": [
+      "cypress",
+      "mock-socket",
+      "node"
+    ]
   },
-  "include": ["**/*.ts"]
+  "include": [
+    "**/*.ts"
+  ]
 }
