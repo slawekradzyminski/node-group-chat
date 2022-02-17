@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "node",
     "strict": true,
@@ -16,6 +18,7 @@
     ]
   },
   "include": [
-    "**/*.ts"
-  ]
+    "**/*.ts",
+    "../node_modules/cypress",
+]
 }
